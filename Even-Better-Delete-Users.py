@@ -93,7 +93,7 @@ print
 if eventlet:
     pool = eventlet.GreenPool(size=200)
 
-params = {'api_key': api_key, 'selector', 'datetime(1386972989 - 2592000) > properties["$last_seen"] and properties["$plan"] = "Free"'}
+params = {'api_key': api_key, 'selector': 'datetime(1387316431 - 2592000) > properties["$last_seen"] and (properties["Plan"] == "Free")'}
 while True: 
     print 'querying'
     response = request(params)
